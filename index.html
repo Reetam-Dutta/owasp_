@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="bodyimg.jpg" />
+      </div>
+      <div class="left-sec">
+        <form
+          action="http://localhost/contactform/index.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h1>Fill the Form</h1>
+          <input type="text" name="name" placeholder="Enter your name" />
+          <input type="email" name="email" placeholder="Enter your email" />
+          <input
+            type="text"
+            name="contact"
+            placeholder="Enter your Contact no."
+          />
+          <textarea name="msg" placeholder="Your message......"></textarea
+          ><br />
+          <button type="submit" name="submit" id="submit-btn">
+            Submit<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="14"
+              width="12.25"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#ffffff"
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
